@@ -1,14 +1,15 @@
 #![allow(dead_code)]
-use serde::{Serialize, Deserialize};
-use ts_rs::{TS, export};
+mod lexov_core {
+    use serde::{Deserialize, Serialize};
+    use ts_rs::{export, TS};
 
-#[derive(Serialize, Deserialize, TS)]
-struct Position {
-    x: f64,
-    y: f64,
-    z: f64,
-}
-
-export! {
-    Position => "ts/structures.ts"
+    #[derive(Serialize, Deserialize, TS)]
+    pub struct Position {
+        x: f64,
+        y: f64,
+        z: f64,
+    }
+    export! {
+        Position => "ts/structures.ts"
+    }
 }
