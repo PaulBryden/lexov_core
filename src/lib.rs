@@ -5,9 +5,9 @@ pub mod data_structures {
 
     #[derive(Serialize, Deserialize, TS)]
     pub struct Position {
-        x: f64,
-        y: f64,
-        z: f64,
+        pub x: f64,
+        pub y: f64,
+        pub z: f64,
     }
     export! {
         Position => "ts/structures.ts"
