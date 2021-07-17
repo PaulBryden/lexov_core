@@ -1,5 +1,5 @@
 #![allow(dead_code)]
-mod lexov_core {
+pub mod data_structures {
     use serde::{Deserialize, Serialize};
     use ts_rs::{export, TS};
 
