@@ -9,7 +9,19 @@ pub mod data_structures {
         pub y: f64,
         pub z: f64,
     }
+
+    #[derive(Serialize, Deserialize, TS, Clone)]
+    pub struct Player {
+        pub uuid: u64,
+        pub position: Position,
+    }
+    
+    
+    #[derive(Serialize, Deserialize, TS, Clone)]
+    pub struct PlayerList {
+        pub players: Vec<Player>,
+    }
     export! {
-        Position => "ts/structures.ts"
+        Position, Player, PlayerList => "ts/structures.ts"
     }
 }
