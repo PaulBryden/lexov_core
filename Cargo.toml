@@ -1,0 +1,11 @@
+[package]
+name = "lexov_core"
+version = "0.1.0"
+authors = ["Paul Bryden <p.d.bry@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ts-rs = {git = "https://github.com/Aleph-Alpha/ts-rs", rev = "2b630a97dc2f8ffe6cf22c9d177242feaf8a0230" }
+serde = "1.0.126"
